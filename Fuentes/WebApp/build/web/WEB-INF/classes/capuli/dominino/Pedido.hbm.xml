@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/09/2016 12:09:13 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="capuli.dominino.Pedido" table="pedido" catalog="sgr" optimistic-lock="version">
+        <id name="idPedido" type="java.lang.Integer">
+            <column name="ID_PEDIDO" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="comensal" class="capuli.dominino.Comensal" fetch="select">
+            <column name="COMENSALES_ID_COMENSAL" not-null="true" />
+        </many-to-one>
+        <many-to-one name="menu" class="capuli.dominino.Menu" fetch="select">
+            <column name="MENU_ID_MENU" />
+        </many-to-one>
+        <property name="numMesa" type="java.lang.Integer">
+            <column name="NUM_MESA" />
+        </property>
+        <property name="cantidad" type="java.lang.Integer">
+            <column name="CANTIDAD" />
+        </property>
+        <property name="precioUnt" type="java.lang.Byte">
+            <column name="PRECIO_UNT" precision="2" scale="0" />
+        </property>
+        <property name="precioTotal" type="java.lang.Byte">
+            <column name="PRECIO_TOTAL" precision="2" scale="0" />
+        </property>
+        <property name="fecha" type="date">
+            <column name="FECHA" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

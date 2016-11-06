@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/09/2016 12:09:13 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="capuli.dominino.Menu" table="menu" catalog="sgr" optimistic-lock="version">
+        <id name="idMenu" type="java.lang.Integer">
+            <column name="ID_MENU" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="bebida" class="capuli.dominino.Bebida" fetch="select">
+            <column name="BEBIDA_ID_BEBIDA" />
+        </many-to-one>
+        <many-to-one name="entrada" class="capuli.dominino.Entrada" fetch="select">
+            <column name="ENTRADA_ID_ENTRADA" />
+        </many-to-one>
+        <many-to-one name="postre" class="capuli.dominino.Postre" fetch="select">
+            <column name="POSTRE_ID_POSTRE" />
+        </many-to-one>
+        <many-to-one name="segundo" class="capuli.dominino.Segundo" fetch="select">
+            <column name="SEGUNDO_ID_SEGUNDO" />
+        </many-to-one>
+        <many-to-one name="tipoMenu" class="capuli.dominino.TipoMenu" fetch="select">
+            <column name="TIPO_MENU_ID_TIPO" not-null="true" />
+        </many-to-one>
+        
+    </class>
+</hibernate-mapping>
