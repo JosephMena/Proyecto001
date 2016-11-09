@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/09/2016 12:09:13 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="capuli.dominino.Comensal" table="comensal" catalog="sgr" optimistic-lock="version">
+        <id name="idComensal" type="java.lang.Integer">
+            <column name="ID_COMENSAL" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="empresa" class="capuli.dominino.Empresa" fetch="select">
+            <column name="EMPRESA_ID_EMPRESA" />
+        </many-to-one>
+        <property name="nombres" type="string">
+            <column name="NOMBRES" length="50" />
+        </property>
+        <property name="apellidos" type="string">
+            <column name="APELLIDOS" length="50" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="TELEFONO" length="10" />
+        </property>
+        <property name="foto" type="binary">
+            <column name="FOTO" />
+        </property>
+        <property name="dni" type="string">
+            <column name="DNI" length="8" />
+        </property>
+        <property name="usuario" type="string">
+            <column name="USUARIO" length="50" />
+        </property>
+        <property name="contrasena" type="string">
+            <column name="CONTRASENA" length="200" />
+        </property>
+        <!--set name="pedidos" table="pedido" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="COMENSALES_ID_COMENSAL" not-null="true" />
+            </key>
+            <one-to-many class="capuli.dominino.Pedido" />
+        </set>
+        <set name="listNocturnos" table="list_nocturno" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="COMENSALES_ID_COMENSAL" not-null="true" />
+            </key>
+            <one-to-many class="capuli.dominino.ListNocturno" />
+        </set-->
+    </class>
+</hibernate-mapping>
