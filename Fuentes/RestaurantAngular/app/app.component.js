@@ -12,16 +12,12 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Titulo';
-        this.persona = '';
-        this.visible2 = false;
     }
-    AppComponent.prototype.decirAdios = function () {
-        this.visible2 = true;
-    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'apprest',
-            templateUrl: 'template.html'
+            templateUrl: 'template.html',
+            styleUrls: ['app/estilos.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

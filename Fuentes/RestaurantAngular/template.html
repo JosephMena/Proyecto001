@@ -1,50 +1,33 @@
-<md-toolbar>
-    <div class="md-toolbar-tools">
-
-
-    </div>
-</md-toolbar>
-<md-toolbar>
-	<div class="md-toolbar-tools">
-		<h2>
-			<img src="images/logo.png" alt="..." />
-		</h2>
-		<span flex=""><span class="subtitle" >Bienvenidos Restaurant Capuli</span></span>
-		<h2>
-			<span></span>
-		</h2>
-		<h2>
-			<img src="images/logo.png" alt=".." />
-		</h2>
-	</div>
-</md-toolbar>
-
-<md-toolbar>
-	<div class="md-toolbar-tools">
-	</div>
-</md-toolbar>
+<md-grid-list cols="3" [style.background]="'#00BDFA'" rowHeight="150px">
+   <md-grid-tile><img src="images/logo.png" alt="..." /></md-grid-tile>
+   <md-grid-tile><span class="subtitle" >Bienvenidos Restaurant Capuli</span></md-grid-tile>
+   <md-grid-tile><img src="images/logo.png" alt=".." /></md-grid-tile>
+</md-grid-list>
 <div ng-cloak>
 	<md-tab-group md-dynamic-height md-border-bottom>
 		<md-tab label="Cocina">
-			 <div layout="row">
-				<div></div>
-				<div layout="column" flex="10">
-					<div flex="1"></div>
-					<section  flex="90" layout="column" layout-sm="column" layout-align="center center" layout-wrap>
-						Pedidos
+			<md-grid-list cols="2" [style.background]="'#FFFFFF'" rowHeight="700px">
+				<md-grid-tile class="panelIzquierdo" >
+					<md-toolbar [color]="myColor">
+						<md-toolbar-row>Pedidos</md-toolbar-row>
+					  <md-toolbar-row>
+						
 						<button md-button class="md-fab md-primary  md-icon my-icon-button " aria-label="Pedidos">
 
 							<img src="images/waiter.png" alt="Bookmark">
 						</button>
-
-						Menus
+					  </md-toolbar-row>
+					<md-toolbar-row>Menus</md-toolbar-row>
+					  <md-toolbar-row>
+						
 						<button md-button class="md-raised my-icon-button" aria-label="Menu">
 							<img src="images/menu-50.png" alt="Bookmark">
 						</button>
-					</section>
-					<div flex="1"></div>
-				</div>
-				<div flex="90" layout="row">
+					  </md-toolbar-row>
+					</md-toolbar>
+					
+				</md-grid-tile>
+				<md-grid-tile class="panelDerecho">
 					<md-card flex>
 						<md-toolbar class="md-whiteframe-1dp">
 							<div class="md-toolbar-tools">
@@ -95,8 +78,9 @@
 							</form>
 						</div>
 					</md-card>
-				</div>
-			 </div>
+				</md-grid-tile>
+			</md-grid-list>
+				
 		</md-tab>
 		<md-tab label="Asafata">
 			

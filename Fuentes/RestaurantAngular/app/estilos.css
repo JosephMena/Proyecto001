@@ -1,0 +1,9 @@
+@import '/node_modules/@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+.panelIzquierdo{
+	 width:calc(((20% - 0.5px) * 1) + 0px) !important;
+}
+.panelDerecho{
+	left:calc(((20% - 0.5px) + 1px) * 1) !important;
+	width:calc(((80% - 0.5px) * 1) + 0px) !important;
+}
+
