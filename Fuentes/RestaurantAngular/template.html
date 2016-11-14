@@ -1,0 +1,109 @@
+<md-toolbar>
+    <div class="md-toolbar-tools">
+
+
+    </div>
+</md-toolbar>
+<md-toolbar>
+	<div class="md-toolbar-tools">
+		<h2>
+			<img src="images/logo.png" alt="..." />
+		</h2>
+		<span flex=""><span class="subtitle" >Bienvenidos Restaurant Capuli</span></span>
+		<h2>
+			<span></span>
+		</h2>
+		<h2>
+			<img src="images/logo.png" alt=".." />
+		</h2>
+	</div>
+</md-toolbar>
+
+<md-toolbar>
+	<div class="md-toolbar-tools">
+	</div>
+</md-toolbar>
+<div ng-cloak>
+	<md-tab-group md-dynamic-height md-border-bottom>
+		<md-tab label="Cocina">
+			 <div layout="row">
+				<div></div>
+				<div layout="column" flex="10">
+					<div flex="1"></div>
+					<section  flex="90" layout="column" layout-sm="column" layout-align="center center" layout-wrap>
+						Pedidos
+						<button md-button class="md-fab md-primary  md-icon my-icon-button " aria-label="Pedidos">
+
+							<img src="images/waiter.png" alt="Bookmark">
+						</button>
+
+						Menus
+						<button md-button class="md-raised my-icon-button" aria-label="Menu">
+							<img src="images/menu-50.png" alt="Bookmark">
+						</button>
+					</section>
+					<div flex="1"></div>
+				</div>
+				<div flex="90" layout="row">
+					<md-card flex>
+						<md-toolbar class="md-whiteframe-1dp">
+							<div class="md-toolbar-tools">
+								<div class="md-title">Habilitar Menu</div>
+							</div>
+						</md-toolbar>
+					</md-card>
+					<md-card flex>
+						<md-toolbar class="md-whiteframe-1dp">
+							<div class="md-toolbar-tools">
+								<div class="md-title">Creacion de Menu</div>
+								<span flex></span>
+								<button md-button class="md-fab   md-icon my-icon-button  " aria-label="agregar" layout="end end" >
+									<img src="images/save.png" alt="agregar">
+								</button>
+							</div>
+						</md-toolbar>
+						<div ng-controller="DemoCtrl as ctrl" layout="column" ng-cloak>
+							<form ng-submit="$event.preventDefault()" layout="column">
+								<div layout="row" flex>
+									<md-card>
+										<md-card-title>
+											<md-card-content>
+												<md-radio-group ng-model="data.tipo" layout="row" >
+													<md-radio-button value="0" class="md-primary">Desayuno</md-radio-button>
+													<md-radio-button value="1" class="md-primary"> Almuerzo </md-radio-button>
+													<md-radio-button value="2" class="md-primary">  Cena</md-radio-button>
+													<md-radio-button value="3" class="md-primary">Extra</md-radio-button>
+												</md-radio-group>
+											</md-card-content>
+										</md-card-title>
+									</md-card>
+								</div>
+								<div flex="1"></div>
+								<div layout="row">
+									
+								</div>
+								<div>
+									<table style="width: 100%" cellspacing="0">
+										<tr>
+											<td><md-input class="demo-full-width" placeholder="Nueva entrada"></md-input></td>
+											<td><md-input class="demo-full-width" placeholder="Nuevo plato principal"></md-input></td>
+											<td><md-input class="demo-full-width" placeholder="Nuevo postre"></md-input></td>
+									  </tr>
+									</table>
+									
+								</div>
+							</form>
+						</div>
+					</md-card>
+				</div>
+			 </div>
+		</md-tab>
+		<md-tab label="Asafata">
+			
+		</md-tab>
+
+		<md-tab label="Admin">
+			
+		</md-tab>
+	</md-tab-group>
+</div>
