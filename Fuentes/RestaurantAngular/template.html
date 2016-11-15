@@ -8,43 +8,28 @@
 		<md-tab label="Cocina">
 			<md-grid-list cols="2" [style.background]="'#FFFFFF'" rowHeight="700px">
 				<md-grid-tile class="panelIzquierdo" >
-					<md-toolbar [color]="myColor">
+					<md-toolbar class="menuVerticalCocina">
 						<md-toolbar-row>Pedidos</md-toolbar-row>
-					  <md-toolbar-row>
-						
-						<button md-button class="md-fab md-primary  md-icon my-icon-button " aria-label="Pedidos">
-
-							<img src="images/waiter.png" alt="Bookmark">
-						</button>
-					  </md-toolbar-row>
-					<md-toolbar-row>Menus</md-toolbar-row>
-					  <md-toolbar-row>
-						
-						<button md-button class="md-raised my-icon-button" aria-label="Menu">
-							<img src="images/menu-50.png" alt="Bookmark">
-						</button>
-					  </md-toolbar-row>
+						<md-toolbar-row>
+							<button md-button class="md-fab md-primary  md-icon my-icon-button " aria-label="Pedidos">
+								<img src="images/waiter.png" alt="Bookmark">
+							</button>
+						</md-toolbar-row>
+						<md-toolbar-row>Menus</md-toolbar-row>
+						<md-toolbar-row>
+							<button md-button class="md-raised my-icon-button" aria-label="Menu">
+								<img src="images/menu-50.png" alt="Bookmark">
+							</button>
+						</md-toolbar-row>
 					</md-toolbar>
-					
 				</md-grid-tile>
 				<md-grid-tile class="panelDerecho">
-					<md-card flex>
-						<md-toolbar class="md-whiteframe-1dp">
-							<div class="md-toolbar-tools">
-								<div class="md-title">Habilitar Menu</div>
-							</div>
-						</md-toolbar>
+					<md-card class="flex">
+						<md-card-title class="cardTitulo">Habilitar Menu</md-card-title>
+						
 					</md-card>
-					<md-card flex>
-						<md-toolbar class="md-whiteframe-1dp">
-							<div class="md-toolbar-tools">
-								<div class="md-title">Creacion de Menu</div>
-								<span flex></span>
-								<button md-button class="md-fab   md-icon my-icon-button  " aria-label="agregar" layout="end end" >
-									<img src="images/save.png" alt="agregar">
-								</button>
-							</div>
-						</md-toolbar>
+					<md-card class="flex">
+						<md-card-title class="cardTitulo">Creacion de Menu</md-card-title>
 						<div ng-controller="DemoCtrl as ctrl" layout="column" ng-cloak>
 							<form ng-submit="$event.preventDefault()" layout="column">
 								<div layout="row" flex>
