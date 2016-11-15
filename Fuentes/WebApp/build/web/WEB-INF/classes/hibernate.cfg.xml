@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="show_sql">true</property>
+    <mapping resource="capuli/dominino/ListNocturno.hbm.xml"/>
+    <mapping resource="capuli/dominino/Empresa.hbm.xml"/>
+    <mapping resource="capuli/dominino/TipoMenu.hbm.xml"/>
+    <mapping resource="capuli/dominino/Bebida.hbm.xml"/>
+    <mapping resource="capuli/dominino/Postre.hbm.xml"/>
+    <mapping resource="capuli/dominino/Pedido.hbm.xml"/>
+    <mapping resource="capuli/dominino/Segundo.hbm.xml"/>
+    <mapping resource="capuli/dominino/Entrada.hbm.xml"/>
+    <mapping resource="capuli/dominino/Comensal.hbm.xml"/>
+    <mapping resource="capuli/dominino/Menu.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

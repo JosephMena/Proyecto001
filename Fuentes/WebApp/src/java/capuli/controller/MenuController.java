@@ -31,7 +31,7 @@ public class MenuController {
     @Autowired
     private ComensalService service;
 
-    @RequestMapping(value = "/menu/", method = RequestMethod.GET)
+    @RequestMapping(value = "/menu", method = RequestMethod.GET)
     public ResponseEntity<List<Menu>> listMenus() {
         List<Menu> menus = service.listMenu();
         if (menus.isEmpty()) {
@@ -79,7 +79,7 @@ public class MenuController {
     
 
     //crear un nuevo menu
-    @RequestMapping(value = "/menu/", method = RequestMethod.POST)
+    @RequestMapping(value = "/menu", method = RequestMethod.POST)
     public ResponseEntity<Void> createMenu(@RequestBody Menu menu, UriComponentsBuilder ucBuilder) {
         System.out.println("creando menu" + menu.getSegundo());
 
