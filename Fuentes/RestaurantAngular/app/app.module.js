@@ -15,6 +15,7 @@ var material_1 = require('@angular/material');
 var http_1 = require('@angular/http');
 var app_component_1 = require('./app.component');
 var app_saludo_1 = require('./app.saludo');
+var app_cocina_1 = require('./app.cocina');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,7 +27,7 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 http_1.HttpModule
             ],
-            declarations: [app_component_1.AppComponent, app_saludo_1.AppSaludo],
+            declarations: [app_component_1.AppComponent, app_saludo_1.AppSaludo, app_cocina_1.AppCocina],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

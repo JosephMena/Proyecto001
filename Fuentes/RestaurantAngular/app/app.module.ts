@@ -5,6 +5,7 @@ import { MaterialModule } from '@angular/material';
 import { HttpModule }    from '@angular/http';
 import { AppComponent }   from './app.component';
 import { AppSaludo }   from './app.saludo';
+import { AppCocina }   from './app.cocina';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { AppSaludo }   from './app.saludo';
 					FormsModule,
 					HttpModule
 				],
-  declarations: [ AppComponent,AppSaludo ],
+  declarations: [ AppComponent,AppSaludo,AppCocina ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
