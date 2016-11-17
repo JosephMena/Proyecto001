@@ -1,19 +1,8 @@
 <md-grid-list cols="3" [style.background]="'#00BDFA'" rowHeight="150px">
    <md-grid-tile><img src="images/logo.png" alt="..." /></md-grid-tile>
-   <md-grid-tile><span class="subtitle" >Bienvenidos Restaurant Capuli</span></md-grid-tile>
+   <md-grid-tile><h1><span class="subtitle" >Restaurant Capuli</span></h1></md-grid-tile>
    <md-grid-tile><img src="images/logo.png" alt=".." /></md-grid-tile>
 </md-grid-list>
 <div ng-cloak>
-	<md-tab-group md-dynamic-height md-border-bottom>
-		<md-tab label="Cocina">
-			<cocina></cocina>
-		</md-tab>
-		<md-tab label="Asafata">
-			
-		</md-tab>
-
-		<md-tab label="Admin">
-			
-		</md-tab>
-	</md-tab-group>
+	<router-outlet></router-outlet>
 </div>

@@ -11,10 +11,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
+var router_1 = require('@angular/router');
 var material_1 = require('@angular/material');
 var http_1 = require('@angular/http');
+var app_routes_1 = require('./app.routes');
 var app_component_1 = require('./app.component');
-var app_saludo_1 = require('./app.saludo');
+var app_inicio_1 = require('./app.inicio');
+var app_menu_normal_1 = require('./app.menu.normal');
 var app_cocina_1 = require('./app.cocina');
 var AppModule = (function () {
     function AppModule() {
@@ -23,11 +26,12 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [
                 material_1.MaterialModule.forRoot(),
+                router_1.RouterModule.forRoot(app_routes_1.AppRoutes),
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
                 http_1.HttpModule
             ],
-            declarations: [app_component_1.AppComponent, app_saludo_1.AppSaludo, app_cocina_1.AppCocina],
+            declarations: [app_component_1.AppComponent, app_inicio_1.AppInicio, app_menu_normal_1.AppMenuNormal, app_cocina_1.AppCocina],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

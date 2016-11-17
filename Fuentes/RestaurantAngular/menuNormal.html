@@ -1,0 +1,24 @@
+<md-grid-list cols="3" [style.background]="'#FFFFFF'" rowHeight="100px">
+   <md-grid-tile></md-grid-tile>
+   <md-grid-tile><h1><span class="subtitle" >Bienvenidos...</span></h1></md-grid-tile>
+   <md-grid-tile></md-grid-tile>
+</md-grid-list>
+
+<md-grid-list cols="1" [style.background]="'#FFFFFF'" rowHeight="100px">
+   <md-grid-tile><b style='font-size:25px'><md-input placeholder="Ingrese su codigo:"></md-input></b></md-grid-tile>
+</md-grid-list>
+
+<md-grid-list cols="1" [style.background]="'#FFFFFF'" rowHeight="100px">
+	<md-grid-tile>
+		<md-radio-group ng-model="data.tipo" layout="row" >
+			<md-radio-button value="0" class="md-primary">Menu 1</md-radio-button>
+			<md-radio-button value="1" class="md-primary">Menu 2</md-radio-button>
+		</md-radio-group>
+	</md-grid-tile>
+</md-grid-list>
+
+<md-grid-list cols="1" [style.background]="'#FFFFFF'" rowHeight="100px">
+	<md-grid-tile>
+		<button md-raised-button color="accent">Generar Ticket</button>
+	</md-grid-tile>
+</md-grid-list>	
