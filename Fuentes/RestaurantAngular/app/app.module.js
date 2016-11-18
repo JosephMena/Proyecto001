@@ -18,7 +18,9 @@ var app_routes_1 = require('./app.routes');
 var app_component_1 = require('./app.component');
 var app_inicio_1 = require('./app.inicio');
 var app_menu_normal_1 = require('./app.menu.normal');
+var app_pedidos_1 = require('./app.pedidos');
 var app_cocina_1 = require('./app.cocina');
+var angular2_data_table_1 = require('angular2-data-table');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -29,9 +31,10 @@ var AppModule = (function () {
                 router_1.RouterModule.forRoot(app_routes_1.AppRoutes),
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
-                http_1.HttpModule
+                http_1.HttpModule,
+                angular2_data_table_1.Angular2DataTableModule
             ],
-            declarations: [app_component_1.AppComponent, app_inicio_1.AppInicio, app_menu_normal_1.AppMenuNormal, app_cocina_1.AppCocina],
+            declarations: [app_component_1.AppComponent, app_inicio_1.AppInicio, app_menu_normal_1.AppMenuNormal, app_cocina_1.AppCocina, app_pedidos_1.AppPedidos],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

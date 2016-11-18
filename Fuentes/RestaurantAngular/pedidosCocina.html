@@ -1,0 +1,31 @@
+<md-grid-list cols="3" [style.background]="'#FFFFFF'" rowHeight="100px">
+	<md-grid-tile><h2><span class="subtitle" >Atender Pedidos...</span></h2></md-grid-tile>
+	<md-grid-tile></md-grid-tile>
+</md-grid-list>
+<md-grid-list cols="1" [style.background]="'#FFFFFF'" rowHeight="300px">
+	<md-grid-tile>
+		
+		 <div style='float:left;width:80%'>
+			<datatable
+			  class="material"
+			  [rows]="rows"
+			  [columnMode]="'force'"
+			  [columns]="columns"
+			  [headerHeight]="50"
+			  [footerHeight]="50"
+			  [rowHeight]="'auto'"
+			  [limit]="5"
+			  [selected]="selected"
+			  [selectionType]="'single'"
+			  (activate)="onActivate($event)"
+			  (select)='onSelect($event)'>
+			</datatable>
+		</div>
+		
+	</md-grid-tile>
+</md-grid-list>	
+<md-grid-list cols="1" [style.background]="'#FFFFFF'" rowHeight="100px">
+	<md-grid-tile>
+		<button md-raised-button color="accent">Atender</button>
+	</md-grid-tile>
+</md-grid-list>	

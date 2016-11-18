@@ -1,0 +1,24 @@
+[
+    {
+        "Ticket": "0001",
+        "cliente": "Daisy Zarzo",
+        "cantidad": 1,
+        "fecha": "10/11/2016",
+		"estado":"Por Atender"
+    },
+	{
+        "Ticket": "0002",
+        "cliente": "Alejandro Vega",
+        "cantidad": 1,
+        "fecha": "10/11/2016",
+		"estado":"Por Atender"
+    },
+	{
+        "Ticket": "0003",
+        "cliente": "Joseph Cerna",
+        "cantidad": 1,
+        "fecha": "10/11/2016",
+		"estado":"Atendido"
+    }
+    
+]

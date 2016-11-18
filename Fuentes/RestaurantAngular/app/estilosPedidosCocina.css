@@ -1,0 +1,12 @@
+@import '/node_modules/angular2-data-table/release/datatable.css';
+@import '/node_modules/angular2-data-table/release/material.css';
+
+md-radio-button{
+	font-size:35px !important;
+	font-weight:bold;
+	margin-left:25px;
+}
+
+button{
+	font-size:30px;
+}
