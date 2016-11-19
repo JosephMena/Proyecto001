@@ -11,14 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppMenuNormal = (function () {
     function AppMenuNormal() {
-        this.dato = 'Joseph Mena';
     }
     AppMenuNormal.prototype.ngOnInit = function () {
         console.log('componente AppMenuNormal inicializado...');
     };
     AppMenuNormal = __decorate([
         core_1.Component({
-            selector: 'saludo',
             templateUrl: 'menuNormal.html',
             styleUrls: ['app/estilosMenuNormal.css']
         }), 

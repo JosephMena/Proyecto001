@@ -31,14 +31,14 @@ public class MenuController {
     @Autowired
     private ComensalService service;
 
-    @RequestMapping(value = "/menu", method = RequestMethod.GET)
-    public ResponseEntity<List<Menu>> listMenus() {
+    @RequestMapping(value = "/menu", method = RequestMethod.GET, headers="Accept=application/json")
+    public List<Menu> listMenus() {
         List<Menu> menus = service.listMenu();
         if (menus.isEmpty()) {
-            return new ResponseEntity<List<Menu>>(HttpStatus.NO_CONTENT);
+            //return new ResponseEntity<List<Menu>>(HttpStatus.NO_CONTENT);
+            return null;
         }
-
-        return new ResponseEntity<List<Menu>>(menus, HttpStatus.OK);
+        return menus;
     }
 
     //retrive a single menu
